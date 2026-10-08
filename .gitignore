@@ -1,0 +1,25 @@
+# секреты
+.env
+*.env
+config_local.py
+secrets.py
+cookies.txt
+
+# временные файлы бота
+downloads/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ide
+.vscode/
+.idea/
+
+# os
+.DS_Store
+Thumbs.db
