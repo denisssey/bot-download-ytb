@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.environ("BOT_TOKEN")
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 DOWNLOAD_DIR = os.path.join(os.path.dirname(__file__), "downloads")
 MAX_DURATION = 10 * 60
