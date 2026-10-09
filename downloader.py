@@ -35,7 +35,7 @@ async def download(url: str, mode: str) -> str:
 
     if mode == "audio":
         cmd = [
-            "yt-dlp", *base,
+            *base,
             "-f", "bestaudio/best",
             "-x", "--audio-format", "mp3", "--audio-quality", "128K",
             "-o", out_tpl, url,
@@ -48,7 +48,7 @@ async def download(url: str, mode: str) -> str:
             f"b[height<={height}]"
         )
         cmd = [
-            "yt-dlp", *base,
+            *base,
             "-f", fmt,
             "--merge-output-format", "mp4",
             "-o", out_tpl, url,
